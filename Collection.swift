@@ -24,13 +24,7 @@
 */
 
 
-// Now a message from a human:
-/*:
- This is
- */
-
 import SwiftUI
-
 
 /**
  Collection: A SwiftUI Collection view
@@ -81,7 +75,6 @@ struct Collection<Element: Identifiable, Content>: View where Content: View {
         Int(data.count / columns)
     }
     
-    // Due to a bug in GeometryReader, I cannot
     var columnSize: (GeometryProxy) -> Length {
         
         { (reader: GeometryProxy) -> Length in
