@@ -147,8 +147,8 @@ struct Collection<Element: Identifiable, Content>: View where Content: View {
     init(
         _ data: Data,
         columns: Int = 2,
-        verticalSpacing vSpacing: Length = SMALL_MARGIN,
-        horizontalSpacing hSpacing: Length = SMALL_MARGIN,
+        verticalSpacing vSpacing: Length = 22.5,
+        horizontalSpacing hSpacing: Length = 22.5,
         @ViewBuilder content: @escaping (Element) -> Content) {
         
         self.data = data
