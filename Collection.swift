@@ -143,7 +143,17 @@ struct Collection<Element: Identifiable, Content>: View where Content: View {
         
     }
     
-    
+    /**
+     Present a Collection View.
+     
+     - Parameter data: An array of `Identifiable`-conforming types. Each one in turn will be  passed inside the `content` closure  and can be used to present varying data.
+     - Parameter columns: The number of columns to fit content into.
+     - Parameter vSpacing: Vertical spacing between rows.
+     - Parameter hSpacing: Horizontal spacing between columns (currently defunct).
+     - Parameter content: A closure with one parameter. This is where you put your Views which should appear in a  grid layout.
+     
+     Option-click Collection for more information!
+    */
     init(
         _ data: Data,
         columns: Int = 2,
