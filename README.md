@@ -26,9 +26,9 @@ struct Person: Identifiable {
 }
 
 let people = [
-    Person("Benji", 13),
-    Person("Alexander", 50),
-    Person("Burgess", 101)
+    Person("Lucy", 13),
+    Person("Jim", 50),
+    Person("Alice", 101)
 ]
 
 Collection(people, columns: 2) { person in // Single parameter, the current value in `people`
